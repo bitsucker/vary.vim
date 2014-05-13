@@ -4,7 +4,7 @@
 
 " make tab do tabs at beginning and spaces elsewhere
 function RetabIndents()
-    let auto_striptab = exists('g:auto_striptab') ? g:auto_striptab : "python"
+    let auto_striptab = exists('g:auto_striptab') ? g:auto_striptab : "php"
     if empty(matchstr(auto_striptab, &ft))
         return
     endif
@@ -15,7 +15,7 @@ endfunction
 
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces
 function StripTrailingWhite()
-    let auto_striptrail = exists('g:auto_striptrail') ? g:auto_striptrail : "python"
+    let auto_striptrail = exists('g:auto_striptrail') ? g:auto_striptrail : "php"
     if empty(matchstr(auto_striptrail, &ft))
         return
     endif
